@@ -1,0 +1,27 @@
+doctype 
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        // displays site properly based on user's device
+        link(rel='icon' type='png' sizes='32x32' href='../static/favicon-32x32.png')
+        title Frontend Mentor | Advice generator app
+        link(rel='stylesheet' href='../static/style.css')
+        
+    body
+        section
+            p Advice # 
+                span #{id}
+            h1  #{advice}
+            img#desktop.divider(src='../static/pattern-divider-desktop.svg' alt='divider')
+            img#mobile.divider(src='../static/pattern-divider-mobile.svg' alt='divider')
+            form(action='/' method='post')
+                button(type='submit')
+                    img#dice(src='../static/icon-dice.svg' alt='')
+        div.attribution
+            | Challenge by 
+            a(href='https://www.frontendmentor.io?ref=challenge' target='_blank') Frontend Mentor
+            | .
+            |     Coded by 
+            a(href='#') Ganesh Rathor
+            | .
